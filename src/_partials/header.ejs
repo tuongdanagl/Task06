@@ -1,23 +1,84 @@
 <header class="c-header">
-  <h1 class="c-header__logo"><a href="<%= BASE_URL %>index.html"><img src="/assets/img/logo.png" alt="Logo"></a></h1>
-  <nav class="c-gnav">
-    <ul>
-      <% if (typeof linklists != 'undefined') { %>
-        <% linklists.main && linklists.main.forEach(link => { %>
-          <li>
-            <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
-            <% if (link.links) { %>
-              <ul>
-                <% link.links.forEach(child_link => { %>
-                  <li>
-                    <a <% if (child_link.current) { %>class="is-active"<% } %> href="<%= child_link.url %>"><%= child_link.title %></a>
-                  </li>
-                <% }) %>
-              </ul>
-            <% } %>
-          </li>
-        <% }) %>
-      <% } %>
-    </ul>
-  </nav>
+  <div class="c-header__hdtrans">
+    <h1 class="c-header__logo">
+      <a href="#">
+        <span class="c-header__text01">兵庫県知事 (10) 8316号</span>
+        <span class="c-header__text02">大和住宅株式会社</span>
+      </a>
+    </h1>
+    <nav class="c-gnav">
+      <ul class="c-gnav__main">
+        <li>
+          <a href="#">大和住宅について</a>
+        </li>
+        <li>
+          <a href="#">委託管理について</a>
+        </li>
+        <li>
+          <a href="#">会社情報</a>
+        </li>
+        <li>
+          <a href="#">物件情報</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
+<div class="c-btnmenu">
+  <div class="c-btnmenu__item1">
+    <div class="c-gnav__boxmenu"><img src="/assets/img/menu.png" alt="Show menu" class="c-gnav__menuicon">MENU</div>
+  </div>
+  <div class="c-btnmenu__item2">
+    <a href="#"><img src="/assets/img/mail.png" alt="Inbox"></a>
+  </div>
+</div>
+<div class="c-popup">
+  <div class="c-popup__overlay"></div>
+  <div class="c-popup__box">
+    <div class="c-popup__inner">
+      <div class="c-popup__row">
+        <div class="c-popup__col">
+          <ul>
+            <li>
+              <a href="#">About us <span>大和住宅について</span></a>
+            </li>
+            <li>
+              <a href="#">Consignment management <span>委託管理について</span></a>
+            </li>
+            <li>
+              <a href="#">Company <span>会社情</span></a>
+            </li>
+            <li>
+              <a href="#">For sale & rent <span>物件情報</span></a>
+            </li>
+            <li>
+              <a href="#">FAQ <span>賃貸管理トラブル集</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="c-popup__col">
+          <ul>
+            <li>
+              <a href="#">Information <span>お知らせ</span></a>
+            </li>
+            <li>
+              <a href="#">Nada style <span>灘エリアのご紹介</span></a>
+            </li>
+            <li>
+              <a href="#">Colmun <span>コラム</span></a>
+            </li>
+            <li>
+              <a href="#">Contact <span>お問い合わせ</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="c-popup__row2">
+        <ul>
+          <li class="c-popup__row2__ins"><a href="#" target="_blank"><img src="/assets/img/facebook.png" alt=""></a></li>
+          <li class="c-popup__row2__face"><a href="#" target="_blank"><img src="/assets/img/instagram.png" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

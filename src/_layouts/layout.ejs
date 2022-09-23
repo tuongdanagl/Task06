@@ -1,13 +1,13 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-      <%= (typeof title != "undefined" ? title : "Page title") %>
-    </title>
+    <meta name="keywords" content="Task96">
+    <meta property="og:description" content="Task06">
+    <title>Task06</title>
     {{ meta }}
     <script type="module" src="/_scss/style.js"></script>
     {{ head }}
@@ -21,6 +21,8 @@
     <%- include('_partials/footer'); -%>
 
     {{ script }}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="/assets/js/main.js"></script>
   </body>
 </html>
