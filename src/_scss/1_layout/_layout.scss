@@ -45,7 +45,7 @@ section {
 
     &__mountainimg {
         padding: 0 4px;
-        margin-top: 15px;
+        margin-top: 17px;
     }
     
     &__cloud1 {
@@ -92,6 +92,8 @@ section {
         width: 25px;
         top: 92px;
         left: -50px;
+        animation: cloudfly 3s infinite ease;
+        animation-delay: 1.2s;
     }
 
     @keyframes cloudfly {
@@ -186,7 +188,7 @@ section {
 
         &__mountain {
             width: 177px;
-            margin: 27px auto 43px;
+            margin: 30px auto 43px;
         }
 
         &__cloud1 {
@@ -197,6 +199,15 @@ section {
         &__cloud2 {
             top: 33px;
             right: -48px;
+        }
+
+        &__cloud4 {
+            left: -47px;
+        }
+        
+        &__cloud5 {
+            top: 82px;
+            left: -44px;
         }
 
         &__text {
@@ -218,7 +229,7 @@ section {
 
         &__item {
             div {
-                height: 626px;
+                height: 625px;
                 background-position: 50% 0%;
             }
 

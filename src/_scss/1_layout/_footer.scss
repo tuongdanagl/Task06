@@ -77,27 +77,28 @@ footer
             padding-left: 66px;
         }
     }
-    @include sp{
+    @include sp {
         padding-top: 39px;
         padding-bottom: 35px;
 
-        &__col25{
+        &__col25 {
             display: none;
         }
 
-        &__col50{
+        &__col50 {
             flex-basis: 100%;
             max-width: 100%;
             padding-bottom: 19px;
         }
 
-        &__image{
+        &__image {
             text-align: center;
 
             img {
                 width: 111px;
             }
         }
+
         &__cpright {
             font-size: 1.21rem;
         }
@@ -128,7 +129,7 @@ footer
         height: 50px;
         padding: 18px 15px 19px 16px;
     }
-    @include sp{
+    @include sp {
         right: 11px;
         bottom: 11px;
         width: 40px;
