@@ -1,0 +1,243 @@
+.c-colfaq {
+    padding: 0;
+
+    &__row {
+        display: flex;
+    }
+
+    &__col {
+        flex-basis: 50%;
+        padding-top: 58px;
+        padding-bottom: 82px;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 20px;
+
+        h2 {
+            font-weight: 600;
+            font-size: 3rem;
+            letter-spacing: -2px;
+            padding-top: 15px;
+            line-height: 1.5;
+            color: #212529;
+
+            span {
+                display: block;
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin-top: -3px;
+                text-indent: -8px;
+                letter-spacing: 0.5px;
+                font-feature-settings: "palt" 1;
+            }
+        }
+    }
+
+    &__inner {
+        max-width: 500px;
+        margin: auto;
+        padding: 0 30px;
+
+        li {
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #111;
+            padding: 19px 0 20px;
+            font-feature-settings: "palt" 1;
+            line-height: 1.5;
+            letter-spacing: 1px;
+            font-size: 1.4rem;
+            color: #212529;
+        }
+
+        li:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    &__column {
+        background-color: #fff;
+
+        &list {
+            span {
+                width: 100px;
+                letter-spacing: 1px;
+                font-feature-settings: "palt" 1;
+            }
+
+            a {
+                padding-left: 10px;
+                display: block;
+                width: calc(100% - 100px);
+                box-sizing: border-box;
+                color: #212529;
+            }
+        }
+    }
+
+    &__faq {
+        background-color: #f3ff2f;
+
+        &list {
+            margin-bottom: -3px;
+
+            li {
+                span {
+                    flex-basis: 30px;
+                    font-weight: 600;
+                    font-size: 1.4rem;
+                }
+
+                a {
+                    flex-basis: calc(100% - 30px);
+                    letter-spacing: 1.4px;
+                }
+
+            }
+        }
+    }
+
+
+    &__button {
+        text-align: center;
+        padding: 30px 0 17px;
+
+        a {
+            font-size: 1.6rem;
+            font-weight: bold;
+            padding: 14px 20px;
+            text-align: center;
+            border: 1px solid #111;
+            line-height: 1;
+            display: block;
+            letter-spacing: 0;
+            font-feature-settings: "palt" 1;
+        }
+    }
+
+    @include tab {
+        &__title {
+            margin-bottom: 21px;
+
+            h2 {
+                margin-top: -2px;
+            }
+        }
+
+        &__row {
+            flex-wrap: wrap;
+        }
+
+        &__col {
+            flex-basis: 100%;
+            max-width: 100%;
+            padding-top: 59px;
+            padding-bottom: 80px;
+        }
+
+        &__button {
+            padding: 29px 0 0;
+        }
+
+        &__faq {
+            padding-bottom: 120px !important;
+
+            &list {
+                li a {
+                    letter-spacing: 1.2px;
+                }
+            }
+        }
+    }
+    @include sp {
+        &__col {
+            padding-top: 17px;
+            padding-bottom: 31px;
+        }
+
+        &__inner {
+            padding: 0 60px 0 62px;
+        }
+
+        &__title {
+            margin-bottom: 13px;
+
+            h2 {
+                font-size: 3rem;
+                line-height: 1.6;
+
+                span {
+                    font-size: 1.5rem;
+                    letter-spacing: 0.1px;
+                    text-indent: -2px;
+                    font-weight: 700;
+                    margin: auto;
+                    margin-top: -5px;
+                }
+            }
+        }
+
+        &__column {
+            span {
+                width: 95px;
+                letter-spacing: 1.5px;
+            }
+
+            &list {
+                a {
+                    padding-left: 0;
+                }
+
+                li {
+                    padding: 15px 0 9px;
+                    line-height: 1.8;
+                    letter-spacing: 1.3px;
+                }
+
+                &3 {
+                    padding-top: 18px !important;
+                }
+            }
+
+        }
+
+        &__faq {
+            padding-bottom: 31px !important;
+
+            &list {
+                li {
+                    padding: 15px 0 13px;
+                    line-height: 1.7;
+
+                    span {
+                        flex-basis: 36px;
+                    }
+    
+                    a {
+                        flex-basis: calc(100% - 36px);
+                        letter-spacing: 1.3px;
+                    }
+                }
+
+                &2 {
+                    padding-bottom: 14px !important;
+                }
+            }
+
+            div:nth-child(3) {
+                padding-top: 21px;
+            }
+        }
+
+        &__button {
+            padding: 22px 0 19px;
+            margin-right: 2px;
+
+            a {
+                padding: 11px 10px 9px;
+            }
+        }
+    }
+}

@@ -1,0 +1,122 @@
+.c-popup {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease-in;
+    overflow-y: scroll;
+
+    &__box {
+        background-color: #000;
+        color: #fff;
+        position: absolute;
+        right: 0;
+        width: calc(60% + 25px);
+        top: 0;
+        transition: 1s;
+        height: 100%;
+        min-height: 650px;
+        z-index: 102;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s ease-in;
+        transform: translateX(100%);
+    }
+    
+    &__inner {
+        width: 100%;
+    }
+
+    &__row {
+        display: flex;
+        padding: 40px;
+        max-width: 740px;
+        margin: 0 auto;
+    }
+
+    &__col {
+        flex-basis: 50%;
+        max-width: 50%;
+        padding: 0 20px;
+
+        li {
+            padding: 10px 10px 10px 0;
+        }
+
+        a {
+            color: #fff;
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+        }
+
+        span {
+            letter-spacing: 0;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+    }
+
+    &__row2 {
+        border-top: 1px solid #666;
+        padding-top: 30px;
+        padding-right: 30px;
+        
+        ul {
+            display: flex;
+            justify-content: center;
+
+            a {
+                color: #fff;
+                font-size: 1.5rem;
+                letter-spacing: 1.2px;
+                padding: 0 15px;
+            }
+        }
+
+        img {
+            width: 35px;
+            height: 35px;
+        }
+    }
+    
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        min-height: 650px;
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    @include tab {
+        &__box {
+            width: 72%;
+        }
+
+        &__row {
+            padding: 40px 50px;
+        }
+    }
+    @include sp {
+        &__box {
+            width: 100%;
+            min-height: 800px;
+        }
+
+        &__row {
+            flex-wrap: wrap;
+        }
+
+        &__col {
+            flex-basis: 100%;
+            max-width: 100%;
+            padding: 0;
+        }
+    }
+}

@@ -1,16 +1,41 @@
 ///*------------------------------------------------------------
 //Anchor position
 //------------------------------------------------------------*/
-//.u-anchor:before {
-//	content:"";
-//	margin-top: -100px;
-//	padding-top: 100px;
-//}
 
-//------------------------------------------------------------
-// margin
-//------------------------------------------------------------
 
-//------------------------------------------------------------
-// color
-//------------------------------------------------------------
+.is-bdfixed {
+    overflow: hidden;
+    touch-action: none;
+    height: 100vh;
+}
+
+.c-btnmenu.is-open {
+    position: fixed;
+}
+
+.is-popupopen {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s ease-out;
+}
+
+.c-popup {
+    .is-open {
+        transform: translatex(0);
+        transition: 0.5s ease-out;
+        transition-delay: 0.1s;
+    }
+}
+
+.u-tabonly {
+    display: none;
+}
+@include onlytab {
+    .u-hidetab {
+        display: none;
+    }
+
+    .u-tabonly {
+        display: block;
+    }
+}

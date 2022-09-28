@@ -1,0 +1,33 @@
+.c-gnav {
+    margin-right: 190px;
+    flex-basis: 70%;
+
+    &__main {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 3%;
+
+        li {
+            display: inline-block;
+
+            + li {
+                margin-left: 3.5%;
+            }
+        }
+    
+        a {
+            font-size: 1.8rem;
+            text-transform: capitalize;
+            font-weight: bold;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-top: 3px;
+            font-feature-settings: "palt" 1;
+        }
+    }
+
+    @include tab {
+        display: none;
+    }
+}

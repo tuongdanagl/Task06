@@ -1,0 +1,51 @@
+.c-btnmenu {
+    position: absolute;
+    z-index: 111;
+    right: 0;
+    top: 0;
+    display: flex;
+
+    &__item1 {
+        position: relative;
+        z-index: 101;
+        width: 90px;
+        cursor: pointer;
+
+        >* {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            font-size: 1.3rem;
+            font-weight: 400;
+            padding: 26px 28px 17px 27px;
+            background-color: #111;
+            color: #fff;
+            line-height: 1.8;
+        }
+
+        img {
+            margin-bottom: 2px;
+            height: 17px;
+            object-fit: contain;
+        }
+    }
+
+    &__item2 {
+        margin-left: 0 !important;
+        width: 90px;
+        text-align: center;
+        padding: 30px 27px 30px 28px;
+        background-color: #f3ff2f;
+        cursor: pointer;
+
+        img {
+            width: 35px;
+        }
+    }
+    @include sp {
+        &__item1 > * {
+            font-size: 1.3rem;
+        }
+    }
+}
