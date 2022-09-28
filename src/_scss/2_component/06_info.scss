@@ -65,7 +65,6 @@
             }
 
             a {
-                letter-spacing: -0.4px;
                 font-feature-settings: "palt" 1;
             }
         }
@@ -87,6 +86,7 @@
             padding: 79px 60px;
             background-color: #fff;
             flex-basis: 520px;
+            max-width: 520px;
             color: #212529;
 
             h3 {
@@ -114,7 +114,7 @@
                 text-align: center;
                 font-size: 1.6rem;
                 line-height: 1;
-                font-weight: 600;
+                font-weight: bold;
                 border: 1px solid #111;
                 width: 265px;
                 margin: auto;
@@ -164,18 +164,19 @@
         margin-bottom: 78px;
         margin-left: 0;
 
-        &inner {
+        &--inner {
             justify-content: flex-end;
             height: 488px;
         }
 
-        &cright {
+        &--cright {
             width: 77%;
             left: -39px;
         }
 
-        &cleft {
+        &--cleft {
             flex-basis: 435px;
+            max-width: 435px;
             margin-right: 20px;
             padding: 77px 60px 80px;
         }
@@ -185,18 +186,19 @@
         margin-left: 0;
         overflow: hidden;
 
-        &inner {
+        &--inner {
             height: 488px;
         }
 
-        &cright {
+        &--cright {
             width: 77%;
             right: -39px;
             left: auto; 
         }
 
-        &cleft {
+        &--cleft {
             flex-basis: 435px;
+            max-width: 435px;
             margin-left: 19px;
         }
     }
@@ -268,7 +270,6 @@
 
             &cright {
                 position: static;
-                left: 0;
                 padding: 0 31px 0 29px;
                 height: 440px;
                 width: 100%;
@@ -290,14 +291,15 @@
         &__row21 {
             margin: 0;
 
-            &cleft {
+            &--cleft {
                 flex-basis: 520px;
+                max-width: 520px;
                 margin-right: 0;
                 padding: 38px 60px 40px;
 
             }
 
-            &cright {
+            &--cright {
                 height: 400px;
                 width: 100%;
                 padding: 0 30px;
@@ -308,13 +310,14 @@
         &__row22 {
             margin-top: 0;
 
-            &cleft {
+            &--cleft {
                 flex-basis: 520px;
+                max-width: 520px;
                 margin-left: 0;
                 padding-top: 38px;
             }
 
-            &cright {
+            &--cright {
                 height: 400px;
                 width: 100%;
                 padding: 0 31px;
@@ -343,10 +346,6 @@
 
                     span {
                         padding-right: 25px;
-                    }
-
-                    a {
-                        letter-spacing: -0.2px;
                     }
                 }
             }
@@ -389,7 +388,6 @@
                 p {
                     font-size: 1.4rem;
                     margin-bottom: 20px;
-                    letter-spacing: 0;
                     line-height: 25px;
                 }
             }
@@ -399,8 +397,8 @@
 
                 a {
                     width: 100%;
-                    padding: 13px 40px 8px 30px;
-                    text-indent: 10px;
+                    padding: 13px 10px 8px 10px;
+                    text-align: center;
                 }
             }
 
@@ -417,14 +415,5 @@
             }
         }
 
-
-        &__row22 {
-            &cleft {
-                a {
-                    text-indent: -7px;
-                    letter-spacing: -2.8px;
-                }
-            }
-        }
     }
 }

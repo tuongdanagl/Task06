@@ -3,12 +3,6 @@
 //------------------------------------------------------------*/
 
 
-.is-bdfixed {
-    overflow: hidden;
-    touch-action: none;
-    height: 100vh;
-}
-
 .c-btnmenu.is-open {
     position: fixed;
 }
@@ -22,12 +16,15 @@
 .c-popup {
     .is-open {
         transform: translatex(0);
-        transition: 0.5s ease-out;
-        transition-delay: 0.1s;
+        transition: 0.5s ease-out 0.1s;
     }
 }
 
 .u-tabonly {
+    display: none;
+}
+
+.u-onlysp {
     display: none;
 }
 @include onlytab {
@@ -38,4 +35,10 @@
     .u-tabonly {
         display: block;
     }
+}
+@include sp {
+    .u-onlysp {
+        display: block;
+    }
+    .u-hidesp {display: none;}
 }

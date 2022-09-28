@@ -19,7 +19,7 @@
             span {
                 font-size: 1.4rem;
                 font-feature-settings: "palt" 1;
-                letter-spacing: 1px;
+                letter-spacing: 0.1em;
             }
         }
     }
@@ -45,12 +45,13 @@
 
         &alt {
             position: absolute;
-            bottom: -1px;
-            right: -1px;
+            bottom: 0;
+            right: 0;
+            box-shadow: 1px 1px 1px 1px #f5f4f3;
             background-color: #fff;
             padding: 9px 9px 8px;
             font-feature-settings: "palt" 1;
-            letter-spacing: 1px;
+            letter-spacing: 0.1em;
             font-size: 1.2rem;
             line-height: 1;
             font-weight: 500;
@@ -63,7 +64,7 @@
 
         h3 {
             font-size: 1.4rem;
-            letter-spacing: 1.6px;
+            letter-spacing: 0.1em;
             font-feature-settings: "palt" 1;
             color: #212529;
         }
@@ -76,12 +77,10 @@
             margin: auto;
             box-sizing: border-box;
             font-size: 1.6rem;
-            font-weight: 600;
+            font-weight: bold;
             padding: 12px 95px;
             border: 1px solid #111;
             line-height: 1;
-            font-feature-settings: "palt" 1;
-            letter-spacing: 1px;
             color: #212529;
         }
     }
@@ -91,18 +90,13 @@
 
         &__content {
             padding: 0;
-        }  
-
-        &__title {
-            span {
-                text-indent: -5px;
-                display: inline-block;
-            }
         }
-
         &__col {
             flex-basis: 50%;
             max-width: 50%;
+        }
+
+        &__inner {
             padding-bottom: 30px;
         }
 
@@ -129,11 +123,16 @@
         &__col {
             flex-basis: 100%;
             max-width: 100%;
-            padding-bottom: 19px;
+
+            &:last-child{
+                h3{
+                    letter-spacing: 0.09em;
+                }
+            }
         }
 
         &__inner {
-            padding: 0 43px;
+            padding: 0 62px 19px;
         }
 
         &__img {
@@ -143,9 +142,8 @@
             }
 
             &alt {
-                padding: 6px 4px 4px;
+                padding: 4px 3px;
                 font-size: 1.1rem;
-                letter-spacing: 1px;
             }
         }
 
@@ -155,11 +153,10 @@
             h3 {
                 line-height: 22px;
                 font-size: 1.4rem;
-                letter-spacing: 1.2px;
 
                 span {
                     display: block;
-                    margin-bottom: -1px;
+                    margin-bottom: 2px;
                 }
             }
         }
@@ -168,7 +165,7 @@
             padding: 21px 0 29px;
 
             a {
-                padding: 10px 88px 9px;
+                padding: 10px 84px 9px;
             }
         }
 

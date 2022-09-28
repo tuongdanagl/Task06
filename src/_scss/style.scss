@@ -8,22 +8,6 @@
 @import "0_base/mixin";
 
 
-
-.sp-only {
-    display: none;
-}
-@include sp {
-    .pc-only {
-        display: none;
-    }
-
-    .sp-only {
-        display: block;
-    }
-}
-
-
-
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Layout .l-
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
@@ -36,16 +20,14 @@
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Component .c-
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
-@import "2_component/01_c-header";
-@import "2_component/02_c-gnav";
-@import "2_component/03_c-btnmenu";
-@import "2_component/04_c-popup";
-@import "2_component/05_c-slider";
-@import "2_component/06_c-info";
-@import "2_component/07_c-style";
-@import "2_component/08_c-colfaq";
-@import "2_component/09_c-footer";
-@import "2_component/10_c-backtotop";
+@import "2_component/02_gnav";
+@import "2_component/03_btnmenu";
+@import "2_component/04_popup";
+@import "2_component/05_slider";
+@import "2_component/06_info";
+@import "2_component/07_style";
+@import "2_component/08_colfaq";
+@import "2_component/10_backtotop";
 
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 // Project .p-

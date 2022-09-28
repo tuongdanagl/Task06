@@ -13,14 +13,14 @@
 
     &__title {
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 24px;
 
         h2 {
-            font-weight: 600;
+            font-weight: bold;
             font-size: 3rem;
             letter-spacing: -2px;
             padding-top: 15px;
-            line-height: 1.5;
+            line-height: 1.4;
             color: #212529;
 
             span {
@@ -29,7 +29,7 @@
                 font-weight: 700;
                 margin-top: -3px;
                 text-indent: -8px;
-                letter-spacing: 0.5px;
+                letter-spacing: 0.1em;
                 font-feature-settings: "palt" 1;
             }
         }
@@ -44,10 +44,10 @@
             display: flex;
             flex-wrap: wrap;
             border-bottom: 1px solid #111;
-            padding: 19px 0 20px;
+            padding: 20px 0;
             font-feature-settings: "palt" 1;
             line-height: 1.5;
-            letter-spacing: 1px;
+            letter-spacing: 0.1em;
             font-size: 1.4rem;
             color: #212529;
         }
@@ -63,7 +63,6 @@
         &list {
             span {
                 width: 100px;
-                letter-spacing: 1px;
                 font-feature-settings: "palt" 1;
             }
 
@@ -86,13 +85,12 @@
             li {
                 span {
                     flex-basis: 30px;
-                    font-weight: 600;
+                    font-weight: bold;
                     font-size: 1.4rem;
                 }
 
                 a {
                     flex-basis: calc(100% - 30px);
-                    letter-spacing: 1.4px;
                 }
 
             }
@@ -102,7 +100,7 @@
 
     &__button {
         text-align: center;
-        padding: 30px 0 17px;
+        padding: 26px 0 17px;
 
         a {
             font-size: 1.6rem;
@@ -112,18 +110,13 @@
             border: 1px solid #111;
             line-height: 1;
             display: block;
-            letter-spacing: 0;
             font-feature-settings: "palt" 1;
         }
     }
 
     @include tab {
         &__title {
-            margin-bottom: 21px;
-
-            h2 {
-                margin-top: -2px;
-            }
+            margin-bottom: 23px;
         }
 
         &__row {
@@ -133,20 +126,17 @@
         &__col {
             flex-basis: 100%;
             max-width: 100%;
-            padding-top: 59px;
-            padding-bottom: 80px;
-        }
-
-        &__button {
-            padding: 29px 0 0;
+            padding-top: 58px;
+            padding-bottom: 63px;
         }
 
         &__faq {
-            padding-bottom: 120px !important;
+            padding-bottom: 104px !important;
+            padding-top: 57px;
 
             &list {
-                li a {
-                    letter-spacing: 1.2px;
+                &2 {
+                    margin-bottom: 2px;
                 }
             }
         }
@@ -170,7 +160,6 @@
 
                 span {
                     font-size: 1.5rem;
-                    letter-spacing: 0.1px;
                     text-indent: -2px;
                     font-weight: 700;
                     margin: auto;
@@ -182,18 +171,17 @@
         &__column {
             span {
                 width: 95px;
-                letter-spacing: 1.5px;
             }
 
             &list {
                 a {
                     padding-left: 0;
+                    width: calc(100% - 95px);
                 }
 
                 li {
-                    padding: 15px 0 9px;
+                    padding: 13px 0 10px;
                     line-height: 1.8;
-                    letter-spacing: 1.3px;
                 }
 
                 &3 {
@@ -204,7 +192,8 @@
         }
 
         &__faq {
-            padding-bottom: 31px !important;
+            padding-bottom: 30px !important;
+            padding-top: 14px;
 
             &list {
                 li {
@@ -217,7 +206,6 @@
     
                     a {
                         flex-basis: calc(100% - 36px);
-                        letter-spacing: 1.3px;
                     }
                 }
 
