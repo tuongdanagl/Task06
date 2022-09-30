@@ -1,3 +1,6 @@
+/*------------------------------------------------------------
+c-style
+------------------------------------------------------------*/
 .c-style {
     padding: 70px 0 107px;
     background-color: #f5f4f3;
@@ -37,7 +40,7 @@
 
     &__inner {
         display: block;
-        padding: 0 20px 50px;
+        margin: 0 20px 50px;
     }
 
     &__img {
@@ -91,13 +94,14 @@
         &__content {
             padding: 0;
         }
+
         &__col {
             flex-basis: 50%;
             max-width: 50%;
         }
 
         &__inner {
-            padding-bottom: 30px;
+            margin-bottom: 30px;
         }
 
         &__button {
@@ -124,15 +128,15 @@
             flex-basis: 100%;
             max-width: 100%;
 
-            &:last-child{
-                h3{
+            &:last-child {
+                h3 {
                     letter-spacing: 0.09em;
                 }
             }
         }
 
         &__inner {
-            padding: 0 62px 19px;
+            margin: 0 62px 19px;
         }
 
         &__img {

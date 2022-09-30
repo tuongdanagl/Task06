@@ -1,6 +1,9 @@
+/*------------------------------------------------------------
+c-gnav
+------------------------------------------------------------*/
 .c-gnav {
     margin-right: 190px;
-    flex-basis: 70%;
+    flex-basis: 55%;
 
     &__main {
         display: flex;
@@ -12,7 +15,7 @@
             display: inline-block;
 
             + li {
-                margin-left: 3.9%;
+                margin-left: 4.7%;
             }
         }
     

@@ -1,17 +1,20 @@
+/*------------------------------------------------------------
+c-info
+------------------------------------------------------------*/
 .c-info {
     padding-top: 0;
 
-    &__row1 {
+    &__r1 {
         margin-left: 10.4%;
         transform: translateY(-87px);
         margin-bottom: -7px;
 
-        &inner {
+        &--inner {
             display: flex;
             align-items: flex-start;
         }
 
-        &cleft {
+        &--cleft {
             background-color: #111;
             height: 100%;
             padding: 78px 141px 70px;
@@ -30,10 +33,11 @@
             &:hover {
                 color: #111;
                 background-color: #f3ff2f;
+                opacity: 1;
             }
         }
 
-        &icon {
+        &--icon {
             position: absolute;
             right: 14px;
             top: calc(50% - 13px);
@@ -41,7 +45,7 @@
             font-weight: bold;
         }
 
-        &cright {
+        &--cright {
             width: 100%;
             padding: 40px 20px 39px 69px;
             background-color: #fff;
@@ -70,17 +74,17 @@
         }
     }
 
-    &__row2 {
+    &__r2 {
         margin-left: 10.4%;
 
-        &inner {
+        &--inner {
             display: flex;
             align-items: center;
             height: 597px;
             position: relative;
         }
 
-        &cleft {
+        &--cleft {
             position: relative;
             z-index: 10;
             padding: 79px 60px;
@@ -105,7 +109,7 @@
 
         }
 
-        &btn {
+        &--btn {
             text-align: center;
 
             a {
@@ -124,7 +128,7 @@
             }
         }
 
-        &cright {
+        &--cright {
             position: absolute;
             top: 0;
             left: 185px;
@@ -136,29 +140,25 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
+                width: 100%;
+                height: 100%;
             }
         }
 
-        &img1 {
-            width: 100%;
-            height: 100%;
+        &--img1 {
             background-image: url("/assets/img/info-1.jpg");
         }
 
-        &img2 {
-            width: 100%;
-            height: 100%;
+        &--img2 {
             background-image: url("/assets/img/info-2.jpg");
         }
 
-        &img3 {
-            width: 100%;
-            height: 100%;
+        &--img3 {
             background-image: url("/assets/img/info-3.jpg");
         }
     }
 
-    &__row21 {
+    &__r21 {
         overflow: hidden;
         margin-top: 80px;
         margin-bottom: 78px;
@@ -182,7 +182,7 @@
         }
     }
 
-    &__row22 {
+    &__r22 {
         margin-left: 0;
         overflow: hidden;
 
@@ -210,16 +210,16 @@
             max-width: 100%;
         }
 
-        &__row1 {
+        &__r1 {
             margin-left: 80px;
             transform: translateY(-86px);
             margin-bottom: -27px;
 
-            &inner {
+            &--inner {
                 flex-wrap: wrap;
             }
 
-            &cleft {
+            &--cleft {
                 order: 2;
                 flex-basis: 100%;
                 padding: 18px 0 16px;
@@ -233,7 +233,7 @@
                 }
             }
 
-            &cright {
+            &--cright {
                 order: 1;
                 flex-basis: 100%;
                 padding: 38px 0 37px 146px;
@@ -248,16 +248,16 @@
             }
         }
 
-        &__row2 {
+        &__r2 {
             margin-left: 0;
 
-            &inner {
+            &--inner {
                 flex-wrap: wrap;
                 height: auto;
                 justify-content: center;
             }
 
-            &cleft {
+            &--cleft {
                 order: 2;
                 padding: 38px 60px 40px;
                 top: -50px;
@@ -268,27 +268,27 @@
                 }
             }
 
-            &cright {
+            &--cright {
                 position: static;
                 padding: 0 31px 0 29px;
                 height: 440px;
                 width: 100%;
             }
 
-            &img1 {
+            &--img1 {
                 background-image: url("/assets/img/info-1tab.jpg");
             }
     
-            &img2 {
+            &--img2 {
                 background-image: url("/assets/img/info-2tab.jpg");
             }
     
-            &img3 {
+            &--img3 {
                 background-image: url("/assets/img/info-3tab.jpg");
             }
         }
 
-        &__row21 {
+        &__r21 {
             margin: 0;
 
             &--cleft {
@@ -307,7 +307,7 @@
 
         }
 
-        &__row22 {
+        &__r22 {
             margin-top: 0;
 
             &--cleft {
@@ -325,12 +325,12 @@
         }
     }
     @include sp {
-        &__row1 {
+        &__r1 {
             margin-left: 0;
             transform: translateY(-29px);
             margin-bottom: 9px;
 
-            &cright {
+            &--cright {
                 margin-left: 40px;
                 background-color: #fff;
                 padding: 20px 20px 18px;
@@ -350,7 +350,7 @@
                 }
             }
 
-            &cleft {
+            &--cleft {
                 padding: 12px 0 10px;
 
                 h2 {
@@ -359,7 +359,7 @@
                 }
             }
 
-            &icon {
+            &--icon {
                 right: 19px;
                 top: calc(50% - 11px);
                 font-size: 2rem;
@@ -367,14 +367,14 @@
         }
 
 
-        &__row2 {
-            &cright {
+        &__r2 {
+            &--cright {
                 padding: 0 20px;
                 height: 200px;
                 margin-top: 1px;
             }
 
-            &cleft {
+            &--cleft {
                 top: 0;
                 padding: 24px 36px 39px 39px;
                 margin-bottom: 0;
@@ -392,25 +392,26 @@
                 }
             }
 
-            &btn {
+            &--btn {
                 margin-right: 3px;
-
+                transform: translateY(1px);
+                
                 a {
                     width: 100%;
-                    padding: 13px 10px 8px 10px;
+                    padding: 13px 10px 8px;
                     text-align: center;
                 }
             }
 
-            &img1 {
+            &--img1 {
                 background-image: url("/assets/img/info-1sp.jpg");
             }
     
-            &img2 {
+            &--img2 {
                 background-image: url("/assets/img/info-2sp.jpg");
             }
     
-            &img3 {
+            &--img3 {
                 background-image: url("/assets/img/info-3sp.jpg");
             }
         }

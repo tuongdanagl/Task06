@@ -15,7 +15,7 @@
 
 .c-popup {
     .is-open {
-        transform: translatex(0);
+        transform: scale(1, 1);
         transition: 0.5s ease-out 0.1s;
     }
 }

@@ -1,3 +1,6 @@
+/*------------------------------------------------------------
+c-popup
+------------------------------------------------------------*/
 .c-popup {
     position: fixed;
     top: 0;
@@ -8,7 +11,7 @@
     opacity: 0;
     visibility: hidden;
     transition: 0.5s ease-in;
-    overflow-y: scroll;
+    overflow-y: auto;
 
     &__box {
         background-color: #000;
@@ -25,7 +28,8 @@
         justify-content: center;
         align-items: center;
         transition: 0.5s ease-in;
-        transform: translateX(100%);
+        transform: scale(0, 1);
+        transform-origin: right;
     }
     
     &__inner {
@@ -116,16 +120,38 @@
         &__box {
             width: 100%;
             min-height: 800px;
+            align-items: flex-start;
         }
 
         &__row {
             flex-wrap: wrap;
+            padding-top: 165px;
+            padding-left: 57px;
+            padding-bottom: 17px;
         }
 
         &__col {
             flex-basis: 100%;
             max-width: 100%;
             padding: 0;
+            
+            li{
+                margin-bottom: 21px;
+                line-height: 1.4;
+                padding: 0;
+            }
+        }
+        &__row2{
+            padding-right: 0;
+
+            img{
+                width: 17px;
+                height: 17px;
+            }
+
+            ul a{
+                padding: 0 8px;
+            }
         }
     }
 }
