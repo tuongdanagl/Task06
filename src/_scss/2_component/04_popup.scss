@@ -135,21 +135,22 @@ c-popup
             max-width: 100%;
             padding: 0;
             
-            li{
+            li {
                 margin-bottom: 21px;
                 line-height: 1.4;
                 padding: 0;
             }
         }
-        &__row2{
+
+        &__row2 {
             padding-right: 0;
 
-            img{
+            img {
                 width: 17px;
                 height: 17px;
             }
 
-            ul a{
+            ul a {
                 padding: 0 8px;
             }
         }

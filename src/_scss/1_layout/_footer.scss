@@ -6,6 +6,7 @@ footer
     padding: 80px 0 66px;
     background: #000;
     color: #fff;
+    font-feature-settings: "palt" 1;
 
     &__content {
         padding: 0 20px;
@@ -24,7 +25,6 @@ footer
             font-size: 1.4rem;
             letter-spacing: 0.1em;
             margin-bottom: 20px;
-            font-feature-settings: "palt" 1;
         }
     }
 
@@ -58,6 +58,7 @@ footer
         letter-spacing: 0.1em;
         padding-bottom: 5px;
         line-height: 1.9;
+        font-feature-settings: "palt" 0;
     }
     @include tab {
         padding-bottom: 39px;

@@ -41,4 +41,10 @@
         display: block;
     }
     .u-hidesp {display: none;}
+
+    .is-bdfixed {
+        position: fixed;
+        height: 100vh;
+        overflow: hidden;
+    }
 }
